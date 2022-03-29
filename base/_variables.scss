@@ -1,15 +1,24 @@
+// Reinicion margen y pading
 *{
     margin: 0px;
     padding: 0;
 }
-
+// Esto es una lista
 $color_body:
 black,
 white,
 rgb(172, 38, 161);
 
-
-
+// Esto es un mapa
+$cosas : map-merge(
+    (
+    "display" : flex,
+    "flex-direction": column,
+    "justify-items": center,
+    "align-items": center,  
+    )
+    ,$cosas
+);
 
 a{
     text-decoration: none;

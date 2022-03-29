@@ -1,4 +1,5 @@
 /* INDEX--------------------------------------------------------------- */
+@import "../base/variables";
 .linea {
     display: inline-block;
     align-items: center;   
@@ -6,10 +7,10 @@
 
 
 .texto_welcome {
-    display: flex;
-    flex-direction: column;
-    justify-items:center ;
-    align-items: center;   
+    display: map-get($cosas , display );
+    flex-direction: map-get($cosas , flex-direction );
+    justify-items:map-get($cosas , justify-items ) ;
+    align-items: map-get($cosas , align-items );   
 }
 .margen{
     padding-left: 50px;
