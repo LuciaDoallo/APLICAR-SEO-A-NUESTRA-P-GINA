@@ -1,0 +1,4 @@
+@import '../base/variables';
+body{
+    background-image: linear-gradient(to bottom, nth($color_body,1) , nth($color_body,1) ,nth($color_body,3) ) 
+} 

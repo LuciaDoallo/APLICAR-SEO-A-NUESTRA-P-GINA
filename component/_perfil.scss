@@ -1,0 +1,32 @@
+/* Perfil */
+
+.titulo_perfil h2{
+    position: relative;
+    top : 50px; 
+    left: 200px;
+    
+    font-size: 50px;
+}
+.parrafo_perfil p{
+    position: relative;
+    top: 100px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+.general_perfil{
+    color: white;
+    font-family: 'Montserrat', sans-serif ;
+}
+.inLine{
+    display: flex;
+    flex-direction: row;
+}
+#img_perfil{
+    grid-area: img_perfil;
+    margin: 20px;
+}
+#texto_perfil{
+    grid-area: texto_perfil;
+}

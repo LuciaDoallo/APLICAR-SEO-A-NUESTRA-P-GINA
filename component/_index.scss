@@ -1,0 +1,51 @@
+/* INDEX--------------------------------------------------------------- */
+.linea {
+    display: inline-block;
+    align-items: center;   
+}
+
+
+.texto_welcome {
+    display: flex;
+    flex-direction: column;
+    justify-items:center ;
+    align-items: center;   
+}
+.margen{
+    padding-left: 50px;
+}
+
+.img_index  div img:hover{
+    left: 50px;
+    position: relative;
+    transition: 1.5s;
+    transform: translate(20px, 20px);
+} 
+
+.titulo_index  div h1{
+    position: relative;
+    bottom: 50px;
+    right: 100px;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif ;
+    text-align: center;
+
+
+}
+
+ 
+.parrafo_index  div p{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+
+    position: relative;
+    /* bottom: 130px; */
+    right: 100px;
+    font-family: 'Montserrat', sans-serif ;
+    text-align: center;
+    color: white;
+   
+} 

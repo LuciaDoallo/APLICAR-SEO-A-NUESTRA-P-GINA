@@ -1,0 +1,41 @@
+/*Footer---------------------------------------------------------------*/
+
+footer ul li{
+    display: inline;
+    margin: 20px;
+
+    position: relative;
+    top: 40px;
+}
+
+
+
+
+footer{
+    height: 120px;
+    /* background-image: url('https://img1.wallspic.com/previews/8/2/9/6/4/146928/146928-textil_de_rayas_rosa_y_negro-x750.jpg'); */
+
+    
+}
+.efecto:hover{
+    transition: 1s;
+    transform: scale(1.3, 1.3);
+}
+
+.imgT{
+    color: white;
+    size: 20px;
+    font-size: 50px ;
+    position: relative;
+    bottom: 15px; 
+
+}
+.centrar{
+    text-align: center;
+    display: inline;
+}
+
+#img_{
+    height: 60%;
+    width: 100%;
+}

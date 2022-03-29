@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+$color_body:
+black,
+white,
+rgb(172, 38, 161);
+
+
+
+
+a{
+    text-decoration: none;
+    margin:20px;
+}
+@font-face {
+    font-family: 'Montserrat', sans-serif ;
+    src: url('https://fonts.googleapis.com/css2? family= Montserrat:wght@500 & display=swap');
+}
+
+
+
+/*Portfolio imagenes*/
+.tamaño1{
+    height: 50%;
+    width: 100%;
+}
+.tamaño2{
+    height: 27%;
+    width: 100%;
+
+}
+.tamaño3{
+    height: 55%;
+    width: 100%;
+
+}
+.tamaño4{
+    height: 285px64.5%;
+    width: 75%;
+
+}
+.tamaño5{
+    height: 25%;
+    width: 100%;
+
+}
+.tamaño6{
+    height: 100%;
+    width: 62.5%;
+
+}
+.tamaño7{
+    height: 60%;
+    width: 100%;
+
+}
+
