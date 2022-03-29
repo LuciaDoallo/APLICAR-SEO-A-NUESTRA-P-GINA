@@ -1,10 +1,16 @@
-.activo{
+.activ{
     padding: 8px 16px 8px 16px;
     background-color: purple;
-    border-radius: 5px;
-    color: white;
-
+    
 }
 .inactivo{
      color: white;
+}
+// Utilizacion de un extend
+.activo{
+    @extend .activ;
+
+    border-radius: 5px;
+    color: white;
+
 }
