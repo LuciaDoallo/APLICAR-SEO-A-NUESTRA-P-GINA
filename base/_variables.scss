@@ -10,14 +10,15 @@ white,
 rgb(172, 38, 161);
 
 // Esto es un mapa
-$cosas : map-merge(
-    (
+
+$cosas :(
+    
     "display" : flex,
     "flex-direction": column,
     "justify-items": center,
-    "align-items": center,  
-    )
+    "align-items": center  
 );
+
 
 // esto es mixin
 @mixin grillA {
