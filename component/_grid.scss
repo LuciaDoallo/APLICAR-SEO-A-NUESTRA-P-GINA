@@ -1,6 +1,7 @@
+@import "../base/variables";
+
 .grilla_index{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    @include grillA;
     
     grid-template-areas:
         "header header header header"
@@ -11,8 +12,6 @@
         "footer footer footer footer"
     ;
     
-    align-items: center;
-    justify-items: center;
     
 } 
 
@@ -20,8 +19,7 @@
 
 
 .grilla_portfolio{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    @include grillA;
     /* grid-column-gap: 20px; */
         /* grid-template-rows: repeat(10, 600px); */
         
@@ -40,16 +38,15 @@
     ;
         
         
-    align-items: center;
-    justify-items: center;
+    
 
         
 }
 
 /* Grilla perfil */
 .grilla_perfil{
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr);
+    @include grillA;
+
     grid-template-areas: 
     "header header header header"
     "header header header header"
@@ -58,12 +55,11 @@
     "footer footer footer footer"
     ;
 
-    align-items: center;
-    justify-items: center;
+  
 }
 .grilla_hobbie{
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr);
+    @include grillA;
+
     grid-template-areas: 
     "header header header header"
     "header header header header"
@@ -73,13 +69,12 @@
     "footer footer footer footer"
     ;
 
-    align-items: center;
-    justify-items: center;
+    
 }
 
 .grilla_contacto{
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr);
+    @include grillA;
+
     grid-template-areas: 
     "header header header header"
     "header header header header"
@@ -89,8 +84,7 @@
     "footer footer footer footer"
     ;
 
-    align-items: center;
-    justify-items: center;
+    
 }
 
 

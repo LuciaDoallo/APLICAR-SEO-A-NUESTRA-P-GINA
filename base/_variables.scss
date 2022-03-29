@@ -20,6 +20,17 @@ $cosas : map-merge(
     ,$cosas
 );
 
+// esto es mixin
+@mixin grillA {
+
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    
+}
+
+
 a{
     text-decoration: none;
     margin:20px;
