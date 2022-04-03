@@ -1,7 +1,7 @@
 @import '../base/defGrid' ;
 
-/* MEDIA TABLET------------------------------------- */
-@media  (min-width: $mobil_min ) and (max-width: $mobil_max ){
+/* MEDIA MOBILE------------------------------------- */
+@media   (max-width: $mobil_max ){
     header{
         height: 200px;
     }
@@ -24,13 +24,13 @@
    
 
     /* INDEX */
-    .titulo_index  div h1{
+    .titulo_index   h1{
         right: 40px;
         font-size: 20px;
         text-align: center;
     }
 
-    .parrafo_index  div p{
+    .parrafo_index   p{
 
         font-size: 10px;
         right: 40px;
@@ -38,7 +38,7 @@
     
    
     } 
-
+    
 
     /* PORTFOLIO */
 
@@ -88,9 +88,8 @@
         grid-template-areas:
             "header header"
             "nav nav "
-            "div2 div2 "
-            "div2 div2"
-            "div2 div2"
+            "div2a div2a "
+            "div2b div2b"
             "footer footer"
         ;
         
@@ -107,10 +106,47 @@
         grid-template-areas:
             "header header"
             "nav nav"
-            "img_perfil  texto_perfil"
+            "img_perfil  img_perfil"
+            "texto_perfil texto_perfil "
             "footer footer"
         ;
         
+        align-items: center;
+        justify-items: center;
+    }
+    .grilla_hobbie{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20%;
+        
+        
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "titulo titulo"
+            "carrusel carrusel"
+            "footer footer footer"
+        ;
+        
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .grilla_contacto{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20%;
+            
+            
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "div div "
+            "div div"
+            "div div"
+            "footer footer"
+        ;
+            
         align-items: center;
         justify-items: center;
     }
@@ -146,7 +182,7 @@
         margin: 20px;
     }
 
-    .titulo_index  div h1{
+    .titulo_index   h1{
         position: relative;
         bottom: 20px;
         right: 100px;
@@ -160,7 +196,7 @@
     }
     
      
-    .parrafo_index  div p{
+    .parrafo_index   p{
         width: auto;
         height: auto;
         font-size: 15px;
@@ -214,9 +250,7 @@
         grid-template-areas:
             "header header header"
             "nav nav nav"
-            "div2 div2 div2 "
-            "div2 div2 div2"
-            "div2 div2 div2"
+            "div2a div2a div2b "
             "footer footer footer"
         ;
         
@@ -254,8 +288,7 @@
         "header header header"
         "nav nav nav"
         "titulo titulo titulo"
-        "div div div"
-        "div div div"
+        "carrusel carrusel carrusel"
         "footer footer footer"
     ;
     

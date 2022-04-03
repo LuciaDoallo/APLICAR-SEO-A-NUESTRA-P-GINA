@@ -128,16 +128,22 @@ footer{
 }
 
 #imagen_index{
-    grid-area: div2;
-    display: inline-flex;
-    justify-items: center;
-    align-items: center;
-    column-gap: 20%;
+    grid-area: div2a;
+    
 }
+#texto_index{
+    grid-area: div2b;
+}
+
 div{
     grid-area: div;
 }
 #titulo_hobbie{
     grid-area: titulo;
     height: 50px;
+    margin: 50px;
+}
+#carouselExampleIndicators{
+    grid-area: carrusel;
+    width: auto;
 }

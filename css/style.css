@@ -155,11 +155,6 @@ a {
   width: 100%;
 }
 
-.linea {
-  display: inline-block;
-  align-items: center;
-}
-
 .texto_welcome {
   display: flex;
   flex-direction: column;
@@ -171,14 +166,14 @@ a {
   padding-left: 50px;
 }
 
-.img_index div img:hover {
+.img_index img:hover {
   left: 50px;
   position: relative;
   transition: 1.5s;
   transform: translate(20px, 20px);
 }
 
-.titulo_index div h1 {
+.titulo_index h1 {
   position: relative;
   bottom: 50px;
   right: 100px;
@@ -189,13 +184,13 @@ a {
   text-align: center;
 }
 
-.parrafo_index div p {
+.parrafo_index p {
   width: auto;
-  height: auto;
+  height: 80%;
   font-size: 20px;
+  padding-bottom: 25px;
   position: relative;
   /* bottom: 130px; */
-  right: 100px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
@@ -417,11 +412,11 @@ footer {
 }
 
 #imagen_index {
-  grid-area: div2;
-  display: inline-flex;
-  justify-items: center;
-  align-items: center;
-  column-gap: 20%;
+  grid-area: div2a;
+}
+
+#texto_index {
+  grid-area: div2b;
 }
 
 div {
@@ -431,6 +426,12 @@ div {
 #titulo_hobbie {
   grid-area: titulo;
   height: 50px;
+  margin: 50px;
+}
+
+#carouselExampleIndicators {
+  grid-area: carrusel;
+  width: auto;
 }
 
 * {
@@ -488,7 +489,7 @@ a {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
-  grid-template-areas: "header header header header" "header header header header" "nav nav nav nav " "div2 div2 div2 div2 " "div2 div2 div2 div2 " "footer footer footer footer";
+  grid-template-areas: "header header header header" "header header header header" "nav nav nav nav " "div2a div2a div2b div2b " "footer footer footer footer";
 }
 
 .grilla_portfolio {
@@ -515,7 +516,7 @@ a {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
-  grid-template-areas: "header header header header" "header header header header" "nav nav nav nav" "titulo titulo titulo titulo" "div div div div" "footer footer footer footer";
+  grid-template-areas: "header header header header" "header header header header" "nav nav nav nav" "titulo titulo titulo titulo" "carrusel carrusel carrusel carrusel" "footer footer footer footer";
 }
 
 .grilla_contacto {
@@ -655,11 +656,11 @@ footer {
 }
 
 #imagen_index {
-  grid-area: div2;
-  display: inline-flex;
-  justify-items: center;
-  align-items: center;
-  column-gap: 20%;
+  grid-area: div2a;
+}
+
+#texto_index {
+  grid-area: div2b;
 }
 
 div {
@@ -669,10 +670,16 @@ div {
 #titulo_hobbie {
   grid-area: titulo;
   height: 50px;
+  margin: 50px;
 }
 
-/* MEDIA TABLET------------------------------------- */
-@media (min-width: 579px) and (max-width: 780px) {
+#carouselExampleIndicators {
+  grid-area: carrusel;
+  width: auto;
+}
+
+/* MEDIA MOBILE------------------------------------- */
+@media (max-width: 780px) {
   header {
     height: 200px;
   }
@@ -692,13 +699,13 @@ div {
 
   /* PORTFOLIO------------------------------------ */
   /* INDEX */
-  .titulo_index div h1 {
+  .titulo_index h1 {
     right: 40px;
     font-size: 20px;
     text-align: center;
   }
 
-  .parrafo_index div p {
+  .parrafo_index p {
     font-size: 10px;
     right: 40px;
     text-align: center;
@@ -722,7 +729,7 @@ div {
   .grilla_index {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "nav nav " "div2 div2 " "div2 div2" "div2 div2" "footer footer";
+    grid-template-areas: "header header" "nav nav " "div2a div2a " "div2b div2b" "footer footer";
     align-items: center;
     justify-items: center;
   }
@@ -731,7 +738,25 @@ div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20%;
-    grid-template-areas: "header header" "nav nav" "img_perfil  texto_perfil" "footer footer";
+    grid-template-areas: "header header" "nav nav" "img_perfil  img_perfil" "texto_perfil texto_perfil " "footer footer";
+    align-items: center;
+    justify-items: center;
+  }
+
+  .grilla_hobbie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20%;
+    grid-template-areas: "header header" "nav nav" "titulo titulo" "carrusel carrusel" "footer footer footer";
+    align-items: center;
+    justify-items: center;
+  }
+
+  .grilla_contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20%;
+    grid-template-areas: "header header" "nav nav" "div div " "div div" "div div" "footer footer";
     align-items: center;
     justify-items: center;
   }
@@ -764,7 +789,7 @@ div {
     margin: 20px;
   }
 
-  .titulo_index div h1 {
+  .titulo_index h1 {
     position: relative;
     bottom: 20px;
     right: 100px;
@@ -775,7 +800,7 @@ div {
     text-align: center;
   }
 
-  .parrafo_index div p {
+  .parrafo_index p {
     width: auto;
     height: auto;
     font-size: 15px;
@@ -800,7 +825,7 @@ div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20%;
-    grid-template-areas: "header header header" "nav nav nav" "div2 div2 div2 " "div2 div2 div2" "div2 div2 div2" "footer footer footer";
+    grid-template-areas: "header header header" "nav nav nav" "div2a div2a div2b " "footer footer footer";
     align-items: center;
     justify-items: center;
   }
@@ -817,7 +842,7 @@ div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20%;
-    grid-template-areas: "header header header" "nav nav nav" "titulo titulo titulo" "div div div" "div div div" "footer footer footer";
+    grid-template-areas: "header header header" "nav nav nav" "titulo titulo titulo" "carrusel carrusel carrusel" "footer footer footer";
     align-items: center;
     justify-items: center;
   }
