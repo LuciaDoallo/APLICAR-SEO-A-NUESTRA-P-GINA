@@ -434,6 +434,10 @@ div {
   width: auto;
 }
 
+.carrousel-inner {
+  width: 1000px;
+}
+
 * {
   margin: 0px;
   padding: 0;
@@ -676,6 +680,10 @@ div {
 #carouselExampleIndicators {
   grid-area: carrusel;
   width: auto;
+}
+
+.carrousel-inner {
+  width: 1000px;
 }
 
 /* MEDIA MOBILE------------------------------------- */

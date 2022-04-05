@@ -147,3 +147,7 @@ div{
     grid-area: carrusel;
     width: auto;
 }
+.carousel-item{
+    display: flex;
+    align-items: center;
+}
