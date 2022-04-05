@@ -7,16 +7,24 @@
     }
 
     nav{ 
-        height: 80px; 
+        height: 20px;
+        padding: 0;
     }
+    #naV{
+        display: flex;
+        flex-direction: column;
+    }
+    
 
     footer{
         height: 100px;
     }
 
-    nav ul li a{
-        font-size: 15px;
+    nav  a{
+        font-size: 100%;
         line-height: 20px;
+        margin: auto;
+        padding: auto;
     }
 
     /* PORTFOLIO------------------------------------ */
@@ -30,7 +38,7 @@
         text-align: center;
     }
 
-    .parrafo_index   p{
+    .titulo_index2   p{
 
         font-size: 10px;
         right: 40px;
@@ -88,8 +96,9 @@
         grid-template-areas:
             "header header"
             "nav nav "
-            "div2a div2a "
             "div2b div2b"
+            "div2a div2a "
+            "div2bb div2bb"
             "footer footer"
         ;
         
@@ -100,14 +109,15 @@
     .grilla_perfil{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20%;
+        
         
         
         grid-template-areas:
             "header header"
             "nav nav"
-            "img_perfil  img_perfil"
             "texto_perfil texto_perfil "
+            "img_perfil  img_perfil"
+            "texto_perfilB texto_perfilB "
             "footer footer"
         ;
         
@@ -117,7 +127,7 @@
     .grilla_hobbie{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20%;
+        
         
         
         grid-template-areas:
@@ -135,7 +145,7 @@
     .grilla_contacto{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20%;
+        
             
             
         grid-template-areas:
@@ -160,16 +170,16 @@
 
     nav{
         height: 50px;
-        width: 781px;
-        padding: 50px;    
+        width: 100%;
+        padding: auto;    
     }
 
     footer{
           height: 100px;
     }
 
-    nav ul li a{
-        font-size: 30px;
+    nav  a{
+        font-size: 100%;
         line-height: 20px;
     }
 
@@ -196,7 +206,7 @@
     }
     
      
-    .parrafo_index   p{
+    .titulo_index2   p{
         width: auto;
         height: auto;
         font-size: 15px;
@@ -251,6 +261,7 @@
             "header header header"
             "nav nav nav"
             "div2a div2a div2b "
+            "div2a div2a div2bb "
             "footer footer footer"
         ;
         
@@ -269,8 +280,7 @@
             "header header header header"
             "nav nav nav nav"
             "img_perfil img_perfil texto_perfil texto_perfil"
-            "img_perfil img_perfil texto_perfil texto_perfil"
-            "img_perfil img_perfil texto_perfil texto_perfil"
+            "img_perfil img_perfil texto_perfilB texto_perfilB"
             "footer footer footer footer"
         ;
         

@@ -8,6 +8,7 @@
         "header header header header"
         "nav nav nav nav "
         "div2a div2a div2b div2b "
+        "div2a div2a div2bb div2bb "
         "footer footer footer footer"
     ;
     
@@ -48,9 +49,9 @@
 
     grid-template-areas: 
     "header header header header"
-    "header header header header"
     "nav nav nav nav"
     "img_perfil img_perfil texto_perfil texto_perfil"
+    "img_perfil img_perfil texto_perfilB texto_perfilB"
     "footer footer footer footer"
     ;
 
