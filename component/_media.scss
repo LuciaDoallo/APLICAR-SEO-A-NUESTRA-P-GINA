@@ -1,7 +1,7 @@
 @import '../base/defGrid' ;
 
 /* MEDIA MOBILE------------------------------------- */
-@media   (max-width: $mobil_max ){
+@media  (min-width: $mobil_min ) and (max-width: $mobil_max ){
     header{
         height: 200px;
     }
@@ -10,11 +10,10 @@
         height: 20px;
         padding: 0;
     }
-    #naV{
-        display: flex;
-        flex-direction: column;
+    .imgT{
+        font-size: 30px;
     }
-    
+   
 
     footer{
         height: 100px;
@@ -24,7 +23,7 @@
         font-size: 100%;
         line-height: 20px;
         margin: auto;
-        padding: auto;
+        padding: 5px;
     }
 
     /* PORTFOLIO------------------------------------ */
@@ -164,38 +163,17 @@
 }
 
 @media (min-width: $tablet_min ) and (max-width: $tablet_max ){
-    header{
-        height: 300px;
-    }
-
-    nav{
-        height: 50px;
-        width: 100%;
-        padding: auto;    
-    }
-
-    footer{
-          height: 100px;
-    }
-
+       
+   
     nav  a{
-        font-size: 100%;
-        line-height: 20px;
-    }
-
-    
-    .Bordes_text h4{
-        width: 781px;
-    }
-    
-    #img_{
-        margin: 20px;
+        font-size: 10px;
+        line-height: 10px;
+        padding: 1%;
     }
 
     .titulo_index   h1{
         position: relative;
-        bottom: 20px;
-        right: 100px;
+        margin: auto;
         font-family: 'Montserrat', sans-serif ;
         font-size: 30px;
         color: white;
@@ -324,4 +302,179 @@
         align-items: center;
         justify-items: center;
     }
+}
+
+
+@media   (max-width: $mo_max ){
+    header{
+        height: 100px;
+    }
+
+    nav{ 
+        height: 20px;
+        padding: 0;
+    }
+  
+    #nuevo{
+        display: inline;
+    }
+
+    footer{
+        height: 100px;
+    }
+    .imgT{
+        font-size: 20px ;
+        size: 10px;
+    }
+
+    nav  a{
+        font-size: 10px;
+        line-height: 10px;
+        padding: 1%;
+        margin: 10px;
+    }
+
+    /* PORTFOLIO------------------------------------ */
+
+   
+
+    /* INDEX */
+    .titulo_index   h1{
+        
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .titulo_index2   p{
+
+        font-size: 10px;
+        
+        text-align: center;
+    
+   
+    } 
+    
+
+    /* PORTFOLIO */
+
+
+    
+    
+
+    .imgT{
+        /* size: 20px; */
+        font-size: 20px ;
+        size: 20px;
+    }
+    
+    footer ul li {
+        margin: auto;
+        padding: 0px;
+    }
+    footer ul li a{
+        margin: auto;
+        padding: 0px;
+    }
+
+
+    /* Grid *//* --------------------------------- */
+
+    .grilla_portfolio{
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(10, 1fr); */
+        grid-template-areas:
+        "header header "
+        "nav nav  "
+        "b_bloque1 b_bloque1 "
+        "b_bloque2a b_bloque2a "
+        "b_bloque2b b_bloque2b "  
+        "b_bloque3a b_bloque3a "
+        "b_bloque3b b_bloque3b "
+        "m_bloque1 m_bloque1 "
+        "m_bloque2a m_bloque2a "
+        "m_bloque2b m_bloque2b "
+        "m_bloque3a m_bloque3a "
+        "m_bloque3b m_bloque3b "
+        "m_bloque4a m_bloque4a"
+        "m_bloque4b m_bloque4b"
+        "footer footer"
+        ;
+    
+        /* --------------------------------- */
+
+    }
+    .grilla_index{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+        
+        grid-template-areas:
+            "header header"
+            "nav nav "
+            "div2b div2b"
+            "div2a div2a "
+            "div2bb div2bb"
+            "footer footer"
+        ;
+        
+        align-items: center;
+        justify-items: center;
+        
+    }
+    .grilla_perfil{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+        
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "texto_perfil texto_perfil "
+            "img_perfil  img_perfil"
+            "texto_perfilB texto_perfilB "
+            "footer footer"
+        ;
+        
+        align-items: center;
+        justify-items: center;
+    }
+    .grilla_hobbie{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+        
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "titulo titulo"
+            "carrusel carrusel"
+            "footer footer footer"
+        ;
+        
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .grilla_contacto{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+            
+            
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "div div "
+            "div div"
+            "div div"
+            "footer footer"
+        ;
+            
+        align-items: center;
+        justify-items: center;
+    }
+    
 }
