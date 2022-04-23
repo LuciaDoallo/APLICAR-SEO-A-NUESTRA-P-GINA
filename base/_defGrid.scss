@@ -150,14 +150,11 @@ div{
     height: 50px;
     margin: auto;
 }
-#carouselExampleIndicators{
+#carouselE{
     grid-area: carrusel;
     width: auto;
 }
-.carousel-item{
-    display: flex;
-    align-items: center;
-}
+
 #img_perfil{
     grid-area: img_perfil;
     padding-left: 20px;

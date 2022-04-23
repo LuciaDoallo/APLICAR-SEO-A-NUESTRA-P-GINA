@@ -429,14 +429,9 @@ div {
   margin: auto;
 }
 
-#carouselExampleIndicators {
+#carouselE {
   grid-area: carrusel;
   width: auto;
-}
-
-.carousel-item {
-  display: flex;
-  align-items: center;
 }
 
 #img_perfil {
@@ -708,14 +703,9 @@ div {
   margin: auto;
 }
 
-#carouselExampleIndicators {
+#carouselE {
   grid-area: carrusel;
   width: auto;
-}
-
-.carousel-item {
-  display: flex;
-  align-items: center;
 }
 
 #img_perfil {
